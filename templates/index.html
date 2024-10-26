@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IDEANEST Demo API</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+
+<body>
+  <h1>Welcome to Abdelrahman API for managing organizations !</h1>
+  <h2>Uing Flask and MongoDB</h2>
+  <div>
+    <h3>Available paths:</h3>
+    <ul>
+      <li><strong>POST</strong> /signup</li>
+      <li><strong>POST</strong> /signin</li>
+      <li><strong>POST</strong> /refresh-token</li>
+      <li><strong>POST</strong> /revoke-refresh-token</li>
+      <li><strong>POST</strong> /organization</li>
+      <li><strong>GET</strong> /organization</li>
+      <li><strong>GET</strong> /organization/{organization_id}</li>
+      <li><strong>PUT</strong> /organization/{organization_id}</li>
+      <li><strong>DELETE</strong> /organization/{organization_id}</li>
+      <li><strong>POST</strong> /organization/{organization_id}/invite</li>
+    </ul>
+  </div>
+</body>
+
+</html>
