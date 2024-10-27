@@ -4,9 +4,10 @@ services:
   flask-app:
     build: .
     ports:
-      - "5000:5000"
+      - "8080:5000"
     depends_on:
       - mongo
+      - redis
 
   mongo:
     image: mongo:latest
